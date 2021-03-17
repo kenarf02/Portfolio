@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1d1d1d;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+.Header{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+.Title{
+    text-align: center;
+    font-family:'Major Mono Display';
+    color: white;
+    padding: 0;
+}
+hr{
+    border: none;
+    height: 1px;
+    color: 	#F0F0F0; 
+    background-color: 	#F0F0F0;
+    width: 70%;
+}
+.Main{
+    display: flex;
+    width: 100%;
+    height:fit-content;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.Carousel{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    width: 70%;
+    height: 110%;
+    overflow-y: hidden;
+    justify-items: center;
+    align-items: center;
+
+}
+.Carousel::-webkit-scrollbar {
+    margin-top: 10px;
+    width: 10px;
+    height: 10px;
+  }
+  .Carousel::-webkit-scrollbar-thumb {
+    background: white;
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+  }
+  .Carousel::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    border-radius: 25px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    border-radius: 25px;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+    border-radius: 25px;
+  }
+  
+  .flip-card-back {
+    background-color: #6F777E;
+    color: white;
+    font-family: 'Open Sans';
+    transform: rotateY(180deg);
+    border-radius: 25px;
+  }
+  .flip-card-back> h1 {
+    font-size: 1.4rem;
+    margin-bottom: -10px;
+  }
+  .flip-card-back > p{
+    font-size: 0.9rem;
+    margin-left:10px;
+    margin-right: 10px;
+  }
+  .Carousel > div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 300px;
+    height: 400px;
+    margin-right: 20px;
+    border-radius: 10px;
+    background: tr;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+
+  }
+  .SocialMedia{
+      margin-top: 2%;
+      width: 70%;
+      height: 5%;
+      display: flex;
+      justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+  }
+  #Card-One{
+      background-image: url("https://miro.medium.com/max/12032/0*c-bcoWl4XqWRBUTn");
+      background-size: cover;
+  }
+  #Card-Five{
+    background-image: url("https://i.pinimg.com/originals/30/2d/8b/302d8b8190d6d6ea200a3773dd300639.jpg");
+    background-size: cover;
+}
+#Card-Two{
+    background-image:  url("./Conference.png");
+    background-size: cover;
+  background-position: center; 
+}
+#Card-Three{
+  background-image:  url("./game.jpg");
+    background-size: cover;
+  background-position: center; 
+}
+#Card-Four{
+  background-image:  url("./ja.jpg");
+    background-size: cover;
+  background-position: center; 
+}
+  i{
+font-size: 4rem;
+color: white;
+  }
+  a{
+      margin-left: 25px;
+  }
+  a:visited{
+    color: white;
+  }
+  .Avatar{
+      width: 7%;
+      border-radius: 50%;
+      margin-bottom: 1%;
+  }
+  .UnderTitle{
+    text-align: center;
+    font-family:'Major Mono Display';
+    color: white;
+    padding: 0;
+    font-size: 20px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .SocialMedia{
+      margin-top: 6%;
+    }
+    .Avatar{
+      width: 25%;
+  }
+  .flip-card {
+width: 200px;
+  }
+  .Carousel > div {
+  width: 280px;
+  }
+
+  }
+  p{
+    margin-bottom: 10px;
+  }
+  @media screen and (max-width: 850px) {
+  html,body{
+    height: fit-content;
+    overflow: scroll;
+  }
+    .SocialMedia{
+      margin-top: 6%;
+    }
+    .Avatar{
+      width: 25%;
+  }
+  .flip-card {
+width: 260px;
+  }
+
+  .flip-card-front{
+    width: 260px;
+  }
+  .Carousel > div {
+  width: 250px;
+  margin-left: auto;
+  }
+  .flip-card-back > h1 {
+    font-size: 24px;
+  }
+  .flip-card-back > p{
+    font-size: 1rem;
+  }
+  .flip-card-back{
+    font-size: 12px;
+  }
+  .Carousel{
+    width: 260px;
+    justify-content: right;
+    justify-items: right;
+    align-content: flex-end;
+  }
+  .SocialMedia{
+  margin-bottom: 4%;
+  }
+
+  }
