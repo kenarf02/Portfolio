@@ -256,7 +256,6 @@ width: 260px;
   }
   .flip-card-back > p{
     font-size: 0.85rem;
-    overflow-y: scroll;
   }
   .flip-card-back{
     font-size: 12px;
