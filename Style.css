@@ -154,7 +154,7 @@ hr{
 
   }
   .SocialMedia{
-    margin-top: 5%;
+    margin-top: 1%;
     width: 70%;
     height: 5%;
     display: flex;
@@ -267,6 +267,7 @@ width: 260px;
     align-content: flex-end;
   }
   .SocialMedia{
+  margin-top: 5%;
   margin-bottom: 4%;
   width: auto;
   display: flex;
