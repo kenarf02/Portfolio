@@ -108,7 +108,10 @@ hr{
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
-  
+  .fa{
+    align-self: center;
+    text-align: center;
+  }
   .flip-card-front {
     background-color: #bbb;
     color: black;
@@ -121,7 +124,6 @@ hr{
     font-family: 'Open Sans';
     transform: rotateY(180deg);
     border-radius: 25px;
-    overflow-y: scroll;
   }
   .flip-card-back> h1 {
     font-size: 1.4rem;
@@ -152,11 +154,11 @@ hr{
 
   }
   .SocialMedia{
-      margin-top: 2%;
-      width: 70%;
-      height: 5%;
-      display: flex;
-      justify-content: center;
+    margin-top: 5%;
+    width: 70%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
     justify-items: center;
     align-items: center;
     align-content: center;
@@ -190,7 +192,8 @@ font-size: 4rem;
 color: white;
   }
   a{
-      margin-left: 25px;
+      padding: 5%;
+      
   }
   a:visited{
     color: white;
@@ -266,6 +269,13 @@ width: 260px;
   }
   .SocialMedia{
   margin-bottom: 4%;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
   }
 
   }
