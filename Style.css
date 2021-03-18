@@ -121,6 +121,7 @@ hr{
     font-family: 'Open Sans';
     transform: rotateY(180deg);
     border-radius: 25px;
+    overflow-y: scroll;
   }
   .flip-card-back> h1 {
     font-size: 1.4rem;
@@ -252,6 +253,7 @@ width: 260px;
   }
   .flip-card-back > p{
     font-size: 0.85rem;
+    overflow-y: scroll;
   }
   .flip-card-back{
     font-size: 12px;
