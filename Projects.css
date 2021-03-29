@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #171717;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+p{
+    font-family:'Open Sans' ;
+    float: left;
+    color: #f2f2f2;
+}
+h1{
+    font-family:'Major Mono Display';
+    color: white;
+    font-size: 2em;
+}
+h2{
+    font-size: 1.5em;
+}
+.MenuBar{
+    top: 0%;
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    display: flex;
+  }
+  .MenuBar a{
+      font-size: 1.5em;
+  }
+  a{
+    padding: 0%;
+    
+}
+.topnav{
+    position: absolute;
+}
+a:visited{
+  color: white;
+}
+.topnav a {
+    font-family:'Open Sans' ;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    width: fit-content;
+  }
+  .Header{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+.Title{
+    text-align: center;
+    font-family:'Major Mono Display';
+    color: white;
+    margin-bottom: -6px;
+    padding: 0;
+}
+hr{
+    border: none;
+    height: 1px;
+    color: 	#F0F0F0; 
+    background-color: 	#F0F0F0;
+    width: 80%;
+}
+.UnderTitle{
+    text-align: center;
+    font-family:'Major Mono Display';
+    color: white;
+    padding: 0;
+    font-size: 1.5em;
+  }
+  .Content{
+      text-align: center;
+      width: 90%;
+      height: 90%;
+      overflow-y: scroll;
+  }
+  .Post{
+      width: 100%;
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+  }
+  .description{
+      width: 70%;
+      text-align: justify;
+  }
+  .Post p{
+      font-size: 1.2em;
+  }
+  #slider{
+      overflow:hidden;
+      height: fit-content;
+  }
+  #slider figure{
+      position: relative;
+      width: 500%;
+      margin: 0%;
+      left: 0%;
+      animation: 20s slider infinite;
+  }
+  #slider figure img{
+      float: left;
+      width: 20%;
+      height: 70vh;
+      
+      object-fit: scale-down;
+
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-button {
+    background: transparent; 
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #333; 
+    border-radius: 50px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: #666; 
+}
+
+
+::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+
+  @keyframes slider {
+      0%{
+          left:0;
+      }
+      20%{
+        left:0%;
+        }
+        25%{
+            left:-100%;
+        }
+        45%{
+            left: -100%;
+        }
+        50%{
+            left: -200%;
+        }
+        70%{
+            left:-200%;
+        }
+        75%{
+            left:-300%;
+        }
+        95%{
+            left: -300%;
+        }
+        100%{
+            left: -300%;
+        }
+  }
+  @media screen and (max-width: 850px) {
+    html,body{
+      height: fit-content;
+      overflow: scroll;
+    }
+    .MenuBar{
+      top: 0%;
+      position: relative;
+      width: 100%;
+      height: 10%;
+      display: flex;
+      align-content: center;
+      text-align: center;
+      justify-content: center;
+      margin-bottom: 6%;
+    }
+    .Header{
+        margin-top: 5%;
+    }
+    #slider figure img{
+        float: left;
+        width: 20%;
+        height: 30vh;
+        
+        object-fit: scale-down;
+  
+    }
+    .description{
+        width: 100%;
+        text-align: justify;
+    }
+    }
+  
