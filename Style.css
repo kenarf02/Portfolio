@@ -51,14 +51,10 @@ hr{
 }
 .MenuBar{
   top: 0%;
-  position: relative;
+  position: absolute;
   width: 100%;
-  height: 10%;
+  height: 5%;
   display: flex;
-  align-content: center;
-  text-align: center;
-  justify-content: center;
-
 }
 .Carousel{
     margin-top: -2%;
