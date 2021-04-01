@@ -6,6 +6,7 @@ html,body{
     margin: 0;
     padding: 0;
     width: 100%;
+    min-height: 100%;
     height: 100%;
     background-color: #171717;
     overflow: hidden;
@@ -15,6 +16,7 @@ html,body{
     align-items: center;
     align-content: center;
     flex-direction: column;
+    position: absolute;
 }
 .MenuBar{
     top: 0%;
@@ -24,7 +26,8 @@ html,body{
     display: flex;
   }
 form{
-    display: flex;
+  position: fixed;
+  display: flex;
     flex-direction: column;
 }
 label{
@@ -93,6 +96,8 @@ input{
     align-items: center;
     align-content: center;
     text-align: center;
+    position: fixed;
+    bottom: 20%;
   }
   a{
     padding: 5%;
@@ -133,5 +138,10 @@ a:visited{
           }
           .SocialMedia{
             margin-top: 5%;
+            bottom: 5%;
           }
+          i{
+            font-size: 2rem;
+            color: white;
+              }
 }
