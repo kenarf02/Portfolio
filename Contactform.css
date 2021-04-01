@@ -134,15 +134,16 @@ a:visited{
           font-size: 1em;
       }
       i{
-        font-size: 4rem;
+        font-size: 2rem;
         color: white;
-          }
-          .SocialMedia{
-            margin-top: 5%;
-            bottom: 5%;
-          }
-          i{
-            font-size: 2rem;
-            color: white;
-              }
+       }
+      .SocialMedia{
+          margin-top: 5%;
+           bottom: 5%;
+        }
+        .SubmitButton{
+          width: 50%;
+          height: 7%;
+          padding-top: 2px;
+        }
 }
