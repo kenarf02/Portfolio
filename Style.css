@@ -26,6 +26,13 @@ html,body{
     align-content: center;
     flex-direction: column;
 }
+.frontTitle{
+  text-align: center;
+    font-family:'Major Mono Display';
+    color: white;
+    text-shadow: 2px 2px #171717;
+    padding: 0;
+}
 .Title{
     text-align: center;
     font-family:'Major Mono Display';
@@ -173,27 +180,32 @@ hr{
     text-align: center;
   }
   #Card-One{
-      background-image: url("https://miro.medium.com/max/12032/0*c-bcoWl4XqWRBUTn");
+      background-image: url("./carbon.png");
       background-size: cover;
+      border: 2px solid white;
   }
   #Card-Five{
     background-image: url("https://i.pinimg.com/originals/30/2d/8b/302d8b8190d6d6ea200a3773dd300639.jpg");
     background-size: cover;
+    border: 2px solid white;
 }
 #Card-Two{
     background-image:  url("./Conference.png");
     background-size: cover;
   background-position: center; 
+  border: 2px solid white;
 }
 #Card-Three{
   background-image:  url("./game.jpg");
     background-size: cover;
-  background-position: center; 
+  background-position: center;
+  border: 2px solid white; 
 }
 #Card-Four{
   background-image:  url("./ja.jpg");
     background-size: cover;
   background-position: center; 
+  border: 2px solid white;
 }
   i{
 font-size: 4rem;
@@ -257,25 +269,32 @@ width: 200px;
     .Avatar{
       width: 25%;
   }
-  .flip-card {
-width: 260px;
+  .flip-card{
+    width: 270px;
+    height: 360px;
+    margin-left: 0%;
+  }
+  .flip-card-inner {
+    width: 270px;
+    height: 360px;
+    margin-left: 0%;
   }
 
-  .flip-card-front{
-    width: 260px;
+  .Carousel{
+    margin-top: 3%;
   }
   .Carousel > div {
-  width: 250px;
+  width: 240px;
   margin-left: auto;
   }
   .flip-card-back > h1 {
-    font-size: 24px;
+    font-size: 1em;
+  }
+  .flip-card-back > h2 {
+    font-size: 1em;
   }
   .flip-card-back > p{
     font-size: 0.85rem;
-  }
-  .flip-card-back{
-    font-size: 12px;
   }
   .Carousel{
     width: 260px;
@@ -303,5 +322,11 @@ width: 260px;
     align-content: center;
     text-align: center;
     justify-content: center;
+  }
+  h2{
+    font-size: 1em;
+  }
+  .frontTitle{
+    font-size: 1.5em;
   }
   }
