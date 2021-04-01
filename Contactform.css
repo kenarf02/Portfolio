@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
+
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #171717;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+.MenuBar{
+    top: 0%;
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    display: flex;
+  }
+form{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    font-family:'Open Sans' ;
+    color: white;
+    float: inline-start;
+}
+h1{
+    font-family:'Major Mono Display';
+    color: white;
+    font-size: 2em;
+}
+input{
+    display: inline-block;
+}
+.message{
+    width: 100%;
+    height: 100%;
+}
+.Form{
+    width: 50%;
+    height: 50%;
+    margin-bottom: 2.5%;
+}
+.SubmitButton{
+    margin-top: 10%;
+    border: none;
+    text-align: center;
+    color: white;
+    background-color: #F2AF29;
+    border-radius: 25px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    width: 70%;
+    align-self: center;
+    cursor: pointer;
+}
+.topnav a {
+    font-family:'Open Sans' ;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    width: fit-content;
+  }
+  hr{
+    border: none;
+    height: 1px;
+    color: 	#F0F0F0; 
+    background-color: 	#F0F0F0;
+    width: 70%;
+}
+.SocialMedia{
+    margin-top: 1.5%;
+    width: 70%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+  }
+  a{
+    padding: 5%;
+    
+}
+a:visited{
+  color: white;
+}
+.fa{
+    align-self: center;
+    text-align: center;
+  }
+  i{
+    font-size: 4rem;
+    color: white;
+      }
+@media screen and (max-width: 850px) {
+    .Form{
+        width: 90%;
+        height: 70%;
+    }
+    .MenuBar{
+        top: 0%;
+        position: absolute;
+        width: 100%;
+        height: 10%;
+        display: flex;
+        align-content: center;
+        text-align: center;
+        justify-content: center;
+      }
+      h1{
+          text-align: center;
+      }
+      i{
+        font-size: 4rem;
+        color: white;
+          }
+          .SocialMedia{
+            margin-top: 5%;
+          }
+}
