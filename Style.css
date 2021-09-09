@@ -132,7 +132,7 @@ hr{
     color: black;
     border-radius: 25px;
   }
-  
+
   .flip-card-back {
     background-color: #6F777E;
     color: white;
@@ -141,7 +141,11 @@ hr{
     border-radius: 25px;
   }
   .flip-card-back> h1 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+    margin-bottom: -10px;
+  }
+  .flip-card-back> h2 {
+    font-size: 1.2rem;
     margin-bottom: -10px;
   }
   .flip-card-back > p{
@@ -211,9 +215,8 @@ hr{
 font-size: 4rem;
 color: white;
   }
-  a{
+  #SocialsIcon{
       padding: 5%;
-      
   }
   a:visited{
     color: white;
@@ -274,6 +277,7 @@ width: 200px;
     height: 360px;
     margin-left: 0%;
   }
+
   .flip-card-inner {
     width: 270px;
     height: 360px;

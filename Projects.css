@@ -122,7 +122,7 @@ hr{
       width: 500%;
       margin: 0%;
       left: 0%;
-      animation: 20s slider infinite;
+      animation: 12s slider infinite;
   }
   #slider figure img{
       float: left;
@@ -161,29 +161,32 @@ hr{
       0%{
           left:0;
       }
-      20%{
+      30%{
         left:0%;
         }
-        25%{
+        33%{
             left:-100%;
         }
-        45%{
+        60%{
+            left:-100%;
+        }
+        63%{
             left: -100%;
         }
-        50%{
+        63%{
             left: -200%;
         }
-        70%{
+        90%{
             left:-200%;
         }
         75%{
-            left:-300%;
+            left:-200%;
         }
         95%{
-            left: -300%;
+            left: -200%;
         }
         100%{
-            left: -300%;
+            left: 0%;
         }
   }
   @media screen and (max-width: 850px) {
